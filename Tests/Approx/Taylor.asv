@@ -1,0 +1,23 @@
+clc; clear; close all;
+x = -1:0.01:1; 
+
+y = TaylorCosine(x,)
+
+
+function g = TaylorCosine(x,x0,n)
+    y0 = cos(x0)
+
+    if n/2 == round(n/2)
+        y = (-1)^(n/2)*cos(x);
+    end
+        y = (-1)^((n+1)/2)*sin(x);
+
+    for k=1:n
+        if n/2 == round(n/2)
+            z = (-1)^(n/2)*cos(x);
+        else
+            z = (-1)^((n+1)/2)*sin(x);
+        end
+        y = y + z/factorial(n) * (x-x0).^n;
+    end
+end
