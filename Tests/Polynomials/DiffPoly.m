@@ -1,6 +1,6 @@
 clc; clear; close all;
 
-a = [2, 3, 6]
+a = [1,     0,    -2,     0,     1]
 b = PolyDiff(a)
 
 
