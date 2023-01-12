@@ -1,6 +1,0 @@
-clc; clear; close all;
-
-%{
-    
-%}
-
