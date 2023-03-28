@@ -22,13 +22,13 @@ switch wybieramy_sygnaly
     case 6, x1=xpi(t,2,3);  x2=xtri(t,-3,6).*xstep(t,-3,-1)+xpi(t,-2,2);    
                                                  ymin_3=0;  ymax_3=1; ymin_4=0; ymax_4=3;
     case 7, x1=xpi(t,2,3);  x2=cos(2*pi*0.1*t);  ymin_3=-1; ymax_3=1; ymin_4=-3; ymax_4=3;
-    case 8, x1=xpi(t,2,4);  x2=cos(2*pi*1*t);    ymin_3=-1; ymax_3=1; ymin_4=-0.3; ymax_4=0.3;
+    case 8, x1=xpi(t,0,8);  x2=xtri(t);    ymin_3=-1; ymax_3=1; ymin_4=-0.3; ymax_4=0.3;
 end
 
 Dt=t(end)-t(1)+dt;
 tt=[t-Dt,t,t+Dt]; Ntt=length(tt);
 t0=-Dt;
-  figure(1); set(gcf, 'WindowState', 'maximized'); pause(0.1);
+  figure(1); set(gcf, 'WindowState', 'maximized'); pause(0.02);
   
   fs1=14;
         for n=1:2*Nt

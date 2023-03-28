@@ -52,4 +52,5 @@ end
                             ylim([-1,1]);    
                             xlabel('t [s]'); title(['sygnał okresowy']);
                             
+
 % EOF                            

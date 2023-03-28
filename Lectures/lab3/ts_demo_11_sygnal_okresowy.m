@@ -10,7 +10,7 @@ clc; clear; close all;
 
 dt=1e-3;   t=-15:dt:15;  Nt=length(t);
 
-wybieramy=1;
+wybieramy=3;
 switch wybieramy
     case 1, sygnal_1=@(t,n,T) xpi(t,n*T,T/2);  % dzielenie przez 2 daje efekt wypełnienia = 1/2; 
     case 2, sygnal_1=@(t,n,T) xtri(t,n*T,T/2); % uwaga na dzielenie przez 2;
